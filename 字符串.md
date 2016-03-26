@@ -1,0 +1,74 @@
+##字符串
+* strlen   ---长度
+* trim     ---对字符串左右空格删除
+* ltrim    ---对字符串左部空格删除 
+* rtrim    ---对字符串右部空格删除
+
+####字符串大小写 
+* strtolower     ---将字符串转换成小写
+* strtoupper     ---将字符串转换成大写
+* ucfirst        ---首字母大写
+* ucwords        ---单词后字母大写
+
+####字符串填充函数
+str_pad("字符串",长度，"填充内容",填充的方向)
+
+###### 填充的方向：
+* STR_PAD_BOTH 左右两侧进行填充，如果填充为奇数，右侧填充
+* STR_PAD_LEFT  左侧填充
+* STR_PAD_RIGHT 右侧填充
+
+####字符串翻转函数
+strrev
+####md5加密
+md5()
+
+####格式化金额字符串函数
+number_format(“字符串”，小数位数,小数点,千位分隔符)
+
+####字符串拆分
+expolde("用于在哪个字符串进行拆分","拆分的字符串","返回元素的数目")
+####把数组元素组合成字符串
+implode("连接字符串"，“数组”)
+####字符串截取
+* substr()    ---对字符串进行指定数量的截取
+* strchr() strstr别名   查找一个字符串在另一个字符串中的第一次出现
+* stristr()不区分大小写查找
+* strchr()查找一个字符串在另一个字符串中最后出现，返回字符串到结尾   区分大小写
+* strpos()查找一个字符串在另一个字符串中第一次出现的位置  区分大小写
+* stripos()功能与上函数相同，但是不区分大小写
+* strrpos()从后面查找一个字符串在另一个字符串中第一次出现的位置
+* strtok()通过字符串把主字符串进行拆开
+* parse_str()把字符串截取为变量
+* chuck_split()把字符串按指定大写拆分
+
+####字符串替换
+* str_replace('被替换的字符串','替换的字符串',字符串[,返回替换次数])  替换字符串或数组元素，区分大小写
+* str_ireplace()不区分大小写替换
+* strtr()  替换字符串中的任意字符
+####字符串比较函数
+* strcmp()比较字符串，如果相等返回0，如果字符串1<字符串2  -1  如果字符串1>字符串2 
+* strcasecmp()不区分大小写字符串比较
+* strnatcmp()按自然数进行字符串比较
+* strncmp()指定位置进行字符串的比较
+* similar_text()比较两个字符串有多少字符相等，第三个参数返回一个变量为两个字符串相似的百分比
+
+####字符串统计函数
+* substr_count(字符串,"查找的字符串"[,查找的起始位置,查找的长度])查找一个字符串在另一个字符串中出现的次数，可以指定起始查找的位置与查找长度
+
+####字符串处理函数
+* array  parse_url(字符串[,PHP_URL_PATH或者PHP_URL_HOST])   解析URL，返回其组成部分
+* urlencode    url编码
+* urldecode     url解码
+* htmlentities   将字符串转换为html实体
+* htmlspecialchars   将字符串转换成html实习，不处理中文
+* htmlspecialchars_decode   将已经转换为html实体的内容转换为字符串
+
+
+* addslashes()在预定义字符串前添加反斜杠 
+* stripslashes() 把转义字符串前的反斜杠删除
+* get_magic_quotes_gpc   获取PHP、INI中是否开启自动转义
+
+* get_magic_quotes_runtime()获取外部文件及数据库资料是是否进行转义
+* set_magic_quotes_runtime()设置获得外部文件及数据库资料是否进行转义
+* strip_tags()去除html xml php的标签
