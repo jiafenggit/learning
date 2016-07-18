@@ -98,7 +98,6 @@ function merge_sort($arr) {
     if ($len <= 1)
         return $arr;
     $half = ($len>>1) + ($len & 1);
-echo "($len & 1)"."   ";
     $arr2d = array_chunk($arr, $half);
     $left = merge_sort($arr2d[0]);
     $right = merge_sort($arr2d[1]);
