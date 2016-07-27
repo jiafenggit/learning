@@ -87,7 +87,6 @@ function quick_sort($arr) {
     //再分别对两个数组进行相同的排序处理方式
     $small_arr = quick_sort($small_arr);
     $big_arr = quick_sort($big_arr);
-    echo "这是快速排序";
     return array_merge($small_arr,array($base),$big_arr);
 }
 //$a = quick_sort($a);
